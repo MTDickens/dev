@@ -15,7 +15,14 @@
         "regex": "cpp",
         "valarray": "c",
         "dlfcn.h": "c",
-        "malloc.h": "c"
+        "malloc.h": "c",
+        "format": "c",
+        "ranges": "c",
+        "span": "c",
+        "stacktrace": "c",
+        "utility": "c",
+        "stdio.h": "c",
+        "expected": "c"
     },
     "cmake.sourceDirectory": "/workspaces/dev/CS106L",
     "C_Cpp.default.compilerPath": "/usr/bin/gcc-13"

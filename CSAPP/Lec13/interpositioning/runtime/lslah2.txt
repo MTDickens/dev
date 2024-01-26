@@ -1,0 +1,505 @@
+malloc(472) = 0x5609b8fa42d0
+malloc(120) = 0x5609b8fa54c0
+malloc(1024) = 0x5609b8fa5540
+free(0x5609b8fa54c0)
+free(0x5609b8fa5540)
+free(0x5609b8fa42d0)
+malloc(5) = 0x5609b8fa5950
+malloc(472) = 0x5609b8fa42d0
+malloc(4096) = 0x5609b8fa5970
+free(0x5609b8fa5970)
+free(0x5609b8fa42d0)
+malloc(5) = 0x5609b8fa5950
+malloc(47) = 0x5609b8fa5970
+malloc(47) = 0x5609b8fa5970
+malloc(104) = 0x5609b8fa59b0
+malloc(42) = 0x5609b8fa5a20
+malloc(72) = 0x5609b8fa5a60
+malloc(36) = 0x5609b8fa5ab0
+malloc(56) = 0x5609b8fa5ae0
+malloc(41) = 0x5609b8fa5b20
+malloc(72) = 0x5609b8fa5b60
+malloc(36) = 0x5609b8fa5bb0
+free(0x5609b8fa5bb0)
+malloc(36) = 0x5609b8fa5bb0
+free(0x5609b8fa5bb0)
+free(0x5609b8fa5950)
+malloc(192) = 0x5609b8fa5be0
+malloc(8) = 0x5609b8fa5950
+malloc(8) = 0x5609b8fa5cb0
+malloc(5) = 0x5609b8fa5cd0
+free(0x5609b8fa5cd0)
+malloc(5) = 0x5609b8fa5cd0
+malloc(44) = 0x5609b8fa5cf0
+free(0x5609b8fa5cf0)
+malloc(44) = 0x5609b8fa5cf0
+malloc(104) = 0x5609b8fa5d30
+malloc(39) = 0x5609b8fa5bb0
+malloc(72) = 0x5609b8fa5da0
+malloc(33) = 0x5609b8fa5df0
+malloc(56) = 0x5609b8fa5e20
+malloc(38) = 0x5609b8fa5e60
+malloc(72) = 0x5609b8fa5e90
+malloc(33) = 0x5609b8fa5ee0
+free(0x5609b8fa5ee0)
+malloc(33) = 0x5609b8fa5ee0
+free(0x5609b8fa5ee0)
+free(0x5609b8fa5cd0)
+malloc(80) = 0x5609b8fa5f10
+malloc(8) = 0x5609b8fa5cd0
+malloc(8) = 0x5609b8fa5f70
+malloc(5) = 0x5609b8fa5f90
+free(0x5609b8fa5f90)
+malloc(5) = 0x5609b8fa5f90
+malloc(42) = 0x5609b8fa5fb0
+free(0x5609b8fa5fb0)
+malloc(42) = 0x5609b8fa5fb0
+malloc(104) = 0x5609b8fa5ff0
+malloc(37) = 0x5609b8fa5ee0
+malloc(72) = 0x5609b8fa6060
+malloc(31) = 0x5609b8fa60b0
+malloc(56) = 0x5609b8fa60e0
+malloc(36) = 0x5609b8fa6120
+malloc(72) = 0x5609b8fa6150
+malloc(31) = 0x5609b8fa61a0
+free(0x5609b8fa61a0)
+malloc(31) = 0x5609b8fa61a0
+free(0x5609b8fa61a0)
+free(0x5609b8fa5f90)
+malloc(104) = 0x5609b8fa61d0
+malloc(8) = 0x5609b8fa5f90
+malloc(8) = 0x5609b8fa6240
+malloc(5) = 0x5609b8fa6260
+free(0x5609b8fa6260)
+malloc(5) = 0x5609b8fa6260
+malloc(40) = 0x5609b8fa61a0
+free(0x5609b8fa61a0)
+malloc(40) = 0x5609b8fa61a0
+malloc(104) = 0x5609b8fa6280
+malloc(35) = 0x5609b8fa62f0
+malloc(72) = 0x5609b8fa6320
+malloc(29) = 0x5609b8fa6370
+malloc(56) = 0x5609b8fa63a0
+malloc(34) = 0x5609b8fa63e0
+malloc(72) = 0x5609b8fa6410
+malloc(29) = 0x5609b8fa6460
+free(0x5609b8fa6460)
+malloc(29) = 0x5609b8fa6460
+free(0x5609b8fa6460)
+free(0x5609b8fa6260)
+malloc(168) = 0x5609b8fa6490
+malloc(8) = 0x5609b8fa6260
+malloc(8) = 0x5609b8fa6540
+malloc(5) = 0x5609b8fa6560
+free(0x5609b8fa6560)
+malloc(5) = 0x5609b8fa6560
+malloc(37) = 0x5609b8fa6460
+free(0x5609b8fa6460)
+malloc(37) = 0x5609b8fa6460
+malloc(104) = 0x5609b8fa6580
+malloc(32) = 0x5609b8fa65f0
+malloc(72) = 0x5609b8fa6620
+malloc(26) = 0x5609b8fa6670
+malloc(56) = 0x5609b8fa66a0
+malloc(31) = 0x5609b8fa66e0
+malloc(72) = 0x5609b8fa6710
+malloc(26) = 0x5609b8fa6760
+free(0x5609b8fa6760)
+malloc(26) = 0x5609b8fa6760
+free(0x5609b8fa6760)
+free(0x5609b8fa6560)
+malloc(120) = 0x5609b8fa54c0
+malloc(8) = 0x5609b8fa6560
+malloc(8) = 0x5609b8fa6790
+malloc(5) = 0x5609b8fa67b0
+free(0x5609b8fa67b0)
+malloc(5) = 0x5609b8fa67b0
+malloc(38) = 0x5609b8fa6760
+free(0x5609b8fa6760)
+malloc(38) = 0x5609b8fa6760
+malloc(104) = 0x5609b8fa67d0
+malloc(33) = 0x5609b8fa6840
+malloc(72) = 0x5609b8fa6870
+malloc(27) = 0x5609b8fa68c0
+malloc(56) = 0x5609b8fa68f0
+malloc(32) = 0x5609b8fa6930
+malloc(72) = 0x5609b8fa77e0
+malloc(27) = 0x5609b8fa7830
+free(0x5609b8fa7830)
+malloc(27) = 0x5609b8fa7830
+free(0x5609b8fa7830)
+free(0x5609b8fa67b0)
+malloc(88) = 0x5609b8fa7860
+malloc(8) = 0x5609b8fa67b0
+malloc(8) = 0x5609b8fa6960
+malloc(5) = 0x5609b8fa78c0
+free(0x5609b8fa78c0)
+malloc(5) = 0x5609b8fa78c0
+malloc(41) = 0x5609b8fa78e0
+free(0x5609b8fa78e0)
+malloc(41) = 0x5609b8fa78e0
+malloc(104) = 0x5609b8fa7920
+malloc(36) = 0x5609b8fa7830
+malloc(72) = 0x5609b8fa7990
+malloc(30) = 0x5609b8fa79e0
+malloc(56) = 0x5609b8fa7a10
+malloc(41) = 0x5609b8fa7a50
+malloc(56) = 0x5609b8fa7a90
+malloc(41) = 0x5609b8fa7ad0
+free(0x5609b8fa7ad0)
+malloc(47) = 0x5609b8fa7ad0
+malloc(72) = 0x5609b8fa7b10
+malloc(41) = 0x5609b8fa7b60
+free(0x5609b8fa7b60)
+malloc(47) = 0x5609b8fa7b60
+free(0x5609b8fa7b60)
+malloc(41) = 0x5609b8fa7b60
+free(0x5609b8fa7b60)
+malloc(41) = 0x5609b8fa7b60
+free(0x5609b8fa7b60)
+malloc(35) = 0x5609b8fa7ba0
+malloc(72) = 0x5609b8fa7bd0
+malloc(30) = 0x5609b8fa7c20
+free(0x5609b8fa7c20)
+malloc(46) = 0x5609b8fa7b60
+malloc(72) = 0x5609b8fa7c50
+malloc(41) = 0x5609b8fa7ca0
+free(0x5609b8fa7ca0)
+malloc(46) = 0x5609b8fa7ca0
+free(0x5609b8fa7ca0)
+malloc(41) = 0x5609b8fa7ca0
+free(0x5609b8fa7ca0)
+malloc(41) = 0x5609b8fa7ca0
+free(0x5609b8fa7ca0)
+malloc(30) = 0x5609b8fa7c20
+free(0x5609b8fa7c20)
+malloc(52) = 0x5609b8fa7ca0
+malloc(104) = 0x5609b8fa7ce0
+malloc(47) = 0x5609b8fa7d50
+free(0x5609b8fa7d50)
+malloc(46) = 0x5609b8fa7d50
+free(0x5609b8fa7d50)
+malloc(41) = 0x5609b8fa7d50
+free(0x5609b8fa7d50)
+malloc(52) = 0x5609b8fa7d50
+free(0x5609b8fa7d50)
+malloc(47) = 0x5609b8fa7d50
+free(0x5609b8fa7d50)
+malloc(46) = 0x5609b8fa7d50
+free(0x5609b8fa7d50)
+malloc(41) = 0x5609b8fa7d50
+free(0x5609b8fa7d50)
+malloc(47) = 0x5609b8fa7d50
+free(0x5609b8fa7d50)
+malloc(46) = 0x5609b8fa7d50
+free(0x5609b8fa7d50)
+malloc(41) = 0x5609b8fa7d50
+free(0x5609b8fa7d50)
+free(0x5609b8fa78c0)
+malloc(104) = 0x5609b8fa7d90
+malloc(8) = 0x5609b8fa78c0
+malloc(8) = 0x5609b8fa7e00
+malloc(5) = 0x5609b8fa7e20
+free(0x5609b8fa7e20)
+malloc(5) = 0x5609b8fa7e20
+malloc(41) = 0x5609b8fa7d50
+free(0x5609b8fa7d50)
+malloc(41) = 0x5609b8fa7d50
+malloc(104) = 0x5609b8fa7e40
+malloc(36) = 0x5609b8fa7c20
+malloc(72) = 0x5609b8fa7eb0
+malloc(30) = 0x5609b8fa7f00
+malloc(56) = 0x5609b8fa7f30
+malloc(35) = 0x5609b8fa7f70
+malloc(72) = 0x5609b8fa7fa0
+malloc(30) = 0x5609b8fa7ff0
+free(0x5609b8fa7ff0)
+malloc(30) = 0x5609b8fa7ff0
+free(0x5609b8fa7ff0)
+free(0x5609b8fa7e20)
+malloc(432) = 0x5609b8fa8020
+malloc(8) = 0x5609b8fa7e20
+malloc(8) = 0x5609b8fa81e0
+malloc(5) = 0x5609b8fa8200
+free(0x5609b8fa8200)
+malloc(5) = 0x5609b8fa8200
+malloc(40) = 0x5609b8fa7ff0
+free(0x5609b8fa7ff0)
+malloc(40) = 0x5609b8fa7ff0
+malloc(104) = 0x5609b8fa8220
+malloc(35) = 0x5609b8fa8290
+malloc(72) = 0x5609b8fa82c0
+malloc(29) = 0x5609b8fa8310
+malloc(56) = 0x5609b8fa8340
+malloc(34) = 0x5609b8fa8380
+malloc(72) = 0x5609b8fa83b0
+malloc(29) = 0x5609b8fa8400
+free(0x5609b8fa8400)
+malloc(29) = 0x5609b8fa8400
+free(0x5609b8fa8400)
+free(0x5609b8fa8200)
+malloc(216) = 0x5609b8fa8430
+malloc(8) = 0x5609b8fa8200
+malloc(8) = 0x5609b8fa8510
+malloc(5) = 0x5609b8fa8530
+free(0x5609b8fa8530)
+malloc(5) = 0x5609b8fa8530
+malloc(37) = 0x5609b8fa8400
+free(0x5609b8fa8400)
+malloc(37) = 0x5609b8fa8400
+malloc(104) = 0x5609b8fa8550
+malloc(32) = 0x5609b8fa85c0
+malloc(72) = 0x5609b8fa85f0
+malloc(26) = 0x5609b8fa8640
+malloc(56) = 0x5609b8fa8670
+malloc(31) = 0x5609b8fa86b0
+malloc(72) = 0x5609b8fa86e0
+malloc(26) = 0x5609b8fa8730
+free(0x5609b8fa8730)
+malloc(26) = 0x5609b8fa8730
+free(0x5609b8fa8730)
+free(0x5609b8fa8530)
+malloc(1336) = 0x5609b8fa8760
+malloc(8) = 0x5609b8fa8530
+malloc(8) = 0x5609b8fa8ca0
+malloc(5) = 0x5609b8fa8cc0
+free(0x5609b8fa8cc0)
+malloc(5) = 0x5609b8fa8cc0
+malloc(40) = 0x5609b8fa8730
+free(0x5609b8fa8730)
+malloc(40) = 0x5609b8fa8730
+malloc(104) = 0x5609b8fa8ce0
+malloc(35) = 0x5609b8fa8d50
+malloc(72) = 0x5609b8fa8d80
+malloc(29) = 0x5609b8fa8dd0
+malloc(56) = 0x5609b8fa8e00
+malloc(34) = 0x5609b8fa8e40
+malloc(72) = 0x5609b8fa8e70
+malloc(29) = 0x5609b8fa8ec0
+free(0x5609b8fa8ec0)
+malloc(29) = 0x5609b8fa8ec0
+free(0x5609b8fa8ec0)
+free(0x5609b8fa8cc0)
+malloc(112) = 0x5609b8fa8ef0
+malloc(8) = 0x5609b8fa8cc0
+malloc(8) = 0x5609b8fa8f70
+malloc(5) = 0x5609b8fa8f90
+free(0x5609b8fa8f90)
+malloc(5) = 0x5609b8fa8f90
+malloc(38) = 0x5609b8fa8ec0
+free(0x5609b8fa8ec0)
+malloc(38) = 0x5609b8fa8ec0
+malloc(104) = 0x5609b8fa8fb0
+malloc(33) = 0x5609b8fa9020
+malloc(72) = 0x5609b8fa9050
+malloc(27) = 0x5609b8fa90a0
+malloc(56) = 0x5609b8fa90d0
+malloc(32) = 0x5609b8fa9110
+malloc(72) = 0x5609b8fa9140
+malloc(27) = 0x5609b8fa9190
+free(0x5609b8fa9190)
+malloc(27) = 0x5609b8fa9190
+free(0x5609b8fa9190)
+free(0x5609b8fa8f90)
+malloc(776) = 0x5609b8fa91c0
+malloc(8) = 0x5609b8fa8f90
+malloc(8) = 0x5609b8fa94d0
+malloc(8) = 0x5609b8fa94f0
+malloc(34) = 0x5609b8fa9190
+malloc(10) = 0x5609b8fa9510
+malloc(56) = 0x5609b8fa9530
+malloc(56) = 0x5609b8fa9570
+malloc(47) = 0x5609b8fa95b0
+malloc(5) = 0x5609b8fa95f0
+malloc(52) = 0x5609b8fa95b0
+malloc(104) = 0x5609b8fa9610
+malloc(47) = 0x5609b8fa9680
+malloc(72) = 0x5609b8fa96c0
+malloc(41) = 0x5609b8fa9710
+malloc(56) = 0x5609b8fa9750
+malloc(46) = 0x5609b8fa9790
+malloc(72) = 0x5609b8fa97d0
+malloc(41) = 0x5609b8fa9820
+free(0x5609b8fa9820)
+malloc(41) = 0x5609b8fa9820
+free(0x5609b8fa9820)
+free(0x5609b8fa95f0)
+malloc(47) = 0x5609b8fa9820
+malloc(208) = 0x5609b8fa9890
+malloc(208) = 0x5609b8fa9970
+malloc(16) = 0x5609b8fa95f0
+malloc(16) = 0x5609b8fa95f0
+malloc(16) = 0x5609b8fa95f0
+malloc(16) = 0x5609b8fa95f0
+malloc(16) = 0x5609b8fa95f0
+malloc(16) = 0x5609b8fa95f0
+malloc(16) = 0x5609b8fa95f0
+malloc(16) = 0x5609b8fa95f0
+malloc(16) = 0x5609b8fa95f0
+malloc(16) = 0x5609b8fa95f0
+malloc(16) = 0x5609b8fa95f0
+malloc(16) = 0x5609b8fa95f0
+malloc(16) = 0x5609b8fa95f0
+malloc(16) = 0x5609b8fa95f0
+malloc(16) = 0x5609b8fa95f0
+malloc(16) = 0x5609b8fa95f0
+malloc(16) = 0x5609b8fa95f0
+malloc(16) = 0x5609b8fa95f0
+malloc(16) = 0x5609b8fa95f0
+malloc(16) = 0x5609b8fa95f0
+malloc(16) = 0x5609b8fa95f0
+malloc(16) = 0x5609b8fa95f0
+malloc(16) = 0x5609b8fa95f0
+malloc(16) = 0x5609b8fa95f0
+malloc(128) = 0x5609b8fa9a50
+malloc(20000) = 0x5609b8fa9ae0
+malloc(32) = 0x5609b8fae910
+malloc(2) = 0x5609b8fa95f0
+malloc(32816) = 0x5609b8fae940
+malloc(1024) = 0x5609b8fa5540
+malloc(472) = 0x5609b8fa42d0
+malloc(16) = 0x5609b8fb6a90
+malloc(120) = 0x5609b8fb6ab0
+malloc(4096) = 0x5609b8fb6b30
+malloc(23) = 0x5609b8fb7b40
+malloc(54) = 0x5609b8fa9820
+malloc(22) = 0x5609b8fb7b60
+malloc(54) = 0x5609b8fb7b80
+malloc(23) = 0x5609b8fb7bc0
+malloc(54) = 0x5609b8fb7be0
+malloc(24) = 0x5609b8fb7c20
+malloc(54) = 0x5609b8fb7c40
+malloc(22) = 0x5609b8fb7c80
+malloc(54) = 0x5609b8fb7ca0
+malloc(52) = 0x5609b8fb7ce0
+malloc(25) = 0x5609b8fb7d20
+malloc(54) = 0x5609b8fb7d50
+malloc(26) = 0x5609b8fb7d90
+malloc(51) = 0x5609b8fb7dc0
+malloc(54) = 0x5609b8fb7e00
+malloc(25) = 0x5609b8fb7e40
+malloc(51) = 0x5609b8fb7e70
+malloc(54) = 0x5609b8fb7eb0
+malloc(23) = 0x5609b8fb7ef0
+malloc(51) = 0x5609b8fb7f10
+malloc(54) = 0x5609b8fb7f50
+malloc(20) = 0x5609b8fb7f90
+malloc(51) = 0x5609b8fb7fb0
+malloc(54) = 0x5609b8fb7ff0
+malloc(25) = 0x5609b8fb8030
+malloc(52) = 0x5609b8fb8060
+free(0x5609b8fb6ab0)
+free(0x5609b8fb6b30)
+free(0x5609b8fa42d0)
+malloc(24) = 0x5609b8fb6b30
+malloc(16) = 0x5609b8fb6b50
+malloc(24) = 0x5609b8fb6b70
+malloc(40) = 0x5609b8fb6b90
+malloc(40) = 0x5609b8fb7080
+malloc(56) = 0x5609b8fb70b0
+malloc(472) = 0x5609b8fa42d0
+malloc(4096) = 0x5609b8fb80a0
+free(0x5609b8fa42d0)
+malloc(32) = 0x5609b8fb71c0
+malloc(1024) = 0x5609b8fb71f0
+malloc(24) = 0x5609b8fb7600
+malloc(16) = 0x5609b8fb7620
+malloc(472) = 0x5609b8fa42d0
+malloc(4096) = 0x5609b8fb80a0
+free(0x5609b8fa42d0)
+malloc(32) = 0x5609b8fb7640
+malloc(3) = 0x5609b8fb7670
+malloc(2) = 0x5609b8fb77a0
+free(0x5609b8fb77c0)
+malloc(6) = 0x5609b8fb78d0
+free(0x5609b8fb78f0)
+malloc(10) = 0x5609b8fb7a00
+free(0x5609b8fb7a20)
+malloc(11) = 0x5609b8fb80a0
+free(0x5609b8fb80c0)
+malloc(11) = 0x5609b8fb81d0
+free(0x5609b8fb81f0)
+malloc(12) = 0x5609b8fb8300
+free(0x5609b8fb8320)
+malloc(5) = 0x5609b8fb8430
+free(0x5609b8fb8450)
+malloc(4) = 0x5609b8fb8450
+free(0x5609b8fae940)
+malloc(216) = 0x5609b8fae940
+malloc(51) = 0x5609b8faea20
+malloc(5) = 0x5609b8faea60
+malloc(56) = 0x5609b8faea20
+malloc(104) = 0x5609b8faea80
+malloc(51) = 0x5609b8faeaf0
+malloc(72) = 0x5609b8faeb30
+malloc(45) = 0x5609b8faeb80
+malloc(56) = 0x5609b8faebc0
+malloc(54) = 0x5609b8faec00
+malloc(56) = 0x5609b8faec40
+malloc(54) = 0x5609b8faec80
+free(0x5609b8faec80)
+malloc(60) = 0x5609b8faecc0
+malloc(72) = 0x5609b8faed10
+malloc(54) = 0x5609b8faec80
+free(0x5609b8faec80)
+malloc(60) = 0x5609b8faed60
+free(0x5609b8faed60)
+malloc(54) = 0x5609b8faec80
+free(0x5609b8faec80)
+malloc(54) = 0x5609b8faec80
+free(0x5609b8faec80)
+malloc(50) = 0x5609b8faec80
+malloc(72) = 0x5609b8faed60
+malloc(45) = 0x5609b8faedb0
+free(0x5609b8faedb0)
+malloc(59) = 0x5609b8faedf0
+malloc(72) = 0x5609b8faee40
+malloc(54) = 0x5609b8faedb0
+free(0x5609b8faedb0)
+malloc(59) = 0x5609b8faee90
+free(0x5609b8faee90)
+malloc(54) = 0x5609b8faedb0
+free(0x5609b8faedb0)
+malloc(54) = 0x5609b8faedb0
+free(0x5609b8faedb0)
+malloc(45) = 0x5609b8faedb0
+free(0x5609b8faedb0)
+malloc(65) = 0x5609b8faee90
+malloc(104) = 0x5609b8faeee0
+malloc(60) = 0x5609b8faef50
+free(0x5609b8faef50)
+malloc(59) = 0x5609b8faef50
+free(0x5609b8faef50)
+malloc(54) = 0x5609b8faedb0
+free(0x5609b8faedb0)
+malloc(65) = 0x5609b8faef50
+free(0x5609b8faef50)
+malloc(60) = 0x5609b8faef50
+free(0x5609b8faef50)
+malloc(59) = 0x5609b8faef50
+free(0x5609b8faef50)
+malloc(54) = 0x5609b8faedb0
+free(0x5609b8faedb0)
+malloc(60) = 0x5609b8faef50
+free(0x5609b8faef50)
+malloc(59) = 0x5609b8faef50
+free(0x5609b8faef50)
+malloc(54) = 0x5609b8faedb0
+free(0x5609b8faedb0)
+free(0x5609b8faea60)
+total 76K
+drwxrwxrwx+ 2 codespace codespace malloc(15) = 0x5609b8faea60
+malloc(472) = 0x5609b8fa42d0
+malloc(4096) = 0x5609b8faefa0
+malloc(17) = 0x5609b8faffb0
+free(0x5609b8fa42d0)
+malloc(20) = 0x5609b8faefa0
+4.0K Jan 26 08:37 .
+drwxrwxrwx+ 5 codespace codespace 4.0K Jan 26 07:58 ..
+-rw-rw-rw-  1 codespace codespace    0 Jan 26 08:07 gcc
+-rw-rw-rw-  1 codespace codespace  109 Jan 26 08:02 int.c
+-rwxrwxrwx  1 codespace codespace  17K Jan 26 08:08 intr
+-rw-rw-rw-  1 codespace codespace  11K Jan 26 08:36 lslah.txt
+-rw-rw-rw-  1 codespace codespace 8.0K Jan 26 08:37 lslah2.txt
+-rw-rw-rw-  1 codespace codespace 1.1K Jan 26 08:36 mymalloc.c
+-rwxrwxrwx  1 codespace codespace  17K Jan 26 08:37 mymalloc.so
