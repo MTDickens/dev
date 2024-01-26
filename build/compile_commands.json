@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/workspaces/dev/build",
+  "command": "/usr/bin/g++-13     -Og -fno-elide-constructors -g   -std=gnu++11 -o CMakeFiles/operator.dir/operator.cpp.o -c /workspaces/dev/CS106L/operator.cpp",
+  "file": "/workspaces/dev/CS106L/operator.cpp"
+},
+{
+  "directory": "/workspaces/dev/build",
+  "command": "/usr/bin/g++-13     -Og -fno-elide-constructors -g   -std=gnu++11 -o CMakeFiles/Lec-13.dir/Lec-13.cpp.o -c /workspaces/dev/CS106L/Lec-13.cpp",
+  "file": "/workspaces/dev/CS106L/Lec-13.cpp"
+},
+{
+  "directory": "/workspaces/dev/build",
+  "command": "/usr/bin/g++-13     -Og -fno-elide-constructors -g   -std=gnu++11 -o CMakeFiles/Lec-13-2.dir/Lec-13-2.cpp.o -c /workspaces/dev/CS106L/Lec-13-2.cpp",
+  "file": "/workspaces/dev/CS106L/Lec-13-2.cpp"
+},
+{
+  "directory": "/workspaces/dev/build",
+  "command": "/usr/bin/g++-13     -Og -fno-elide-constructors -g   -std=gnu++11 -o CMakeFiles/Lec-12.dir/Lec-12.cpp.o -c /workspaces/dev/CS106L/Lec-12.cpp",
+  "file": "/workspaces/dev/CS106L/Lec-12.cpp"
+}
+]

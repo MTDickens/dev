@@ -1,0 +1,1 @@
+/usr/bin/g++-13   -Og -fno-elide-constructors -g   CMakeFiles/operator.dir/operator.cpp.o  -o operator 

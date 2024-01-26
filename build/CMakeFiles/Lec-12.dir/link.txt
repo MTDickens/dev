@@ -1,0 +1,1 @@
+/usr/bin/g++-13   -Og -fno-elide-constructors -g   CMakeFiles/Lec-12.dir/Lec-12.cpp.o  -o Lec-12 

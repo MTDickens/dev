@@ -1,0 +1,22 @@
+{
+    "files.associations": {
+        "array": "cpp",
+        "bitset": "cpp",
+        "deque": "cpp",
+        "forward_list": "cpp",
+        "list": "cpp",
+        "string": "cpp",
+        "vector": "cpp",
+        "iterator": "cpp",
+        "string_view": "cpp",
+        "initializer_list": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "regex": "cpp",
+        "valarray": "c",
+        "dlfcn.h": "c",
+        "malloc.h": "c"
+    },
+    "cmake.sourceDirectory": "/workspaces/dev/CS106L",
+    "C_Cpp.default.compilerPath": "/usr/bin/gcc-13"
+}

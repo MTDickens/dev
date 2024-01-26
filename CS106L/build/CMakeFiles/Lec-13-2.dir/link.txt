@@ -1,0 +1,1 @@
+/usr/bin/c++    -O   CMakeFiles/Lec-13-2.dir/Lec-13-2.cpp.o  -o Lec-13-2 
