@@ -1,6 +1,0 @@
-/workspaces/dev/build/CMakeFiles/rebuild_cache.dir
-/workspaces/dev/build/CMakeFiles/edit_cache.dir
-/workspaces/dev/build/CMakeFiles/operator.dir
-/workspaces/dev/build/CMakeFiles/Lec-13.dir
-/workspaces/dev/build/CMakeFiles/Lec-13-2.dir
-/workspaces/dev/build/CMakeFiles/Lec-12.dir
