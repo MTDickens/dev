@@ -22,7 +22,21 @@
         "stacktrace": "c",
         "utility": "c",
         "stdio.h": "c",
-        "expected": "c"
+        "expected": "c",
+        "atomic": "c",
+        "barrier": "c",
+        "condition_variable": "c",
+        "future": "c",
+        "latch": "c",
+        "mutex": "c",
+        "shared_mutex": "c",
+        "cerrno": "c",
+        "signal.h": "c",
+        "unistd.h": "c",
+        "types.h": "c",
+        "safe-io.h": "c",
+        "csapp.h": "c",
+        "in.h": "c"
     },
     "cmake.sourceDirectory": "/workspaces/dev/CS106L",
     "C_Cpp.default.compilerPath": "/usr/bin/gcc-13"

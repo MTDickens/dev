@@ -1,0 +1,1 @@
+This program tests `wait`(also `waitpid`), `sigprocmask`, `sigsuspend` and `signal` functions.
