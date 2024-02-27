@@ -42,7 +42,11 @@ test = do
   return (x<10)
 
 ifM :: Monad m => m Bool -> m a -> m a -> m a
-ifM opBool opThen opElse = todo
+ifM opBool opThen opElse =
+  -- opBool >>= (\x -> if x then opThen else opElse)
+  do
+    b <- opBool
+    if b then opThen else opElse
 
 ------------------------------------------------------------------------------
 -- Ex 2: the standard library function Control.Monad.mapM defines a
@@ -84,8 +88,7 @@ perhapsIncrement True x = modify (+x)
 perhapsIncrement False _ = return ()
 
 mapM2 :: Monad m => (a -> b -> m c) -> [a] -> [b] -> m [c]
-mapM2 op xs ys = todo
-
+mapM2 op xs ys = mapM (uncurry op) (zip xs ys)
 ------------------------------------------------------------------------------
 -- Ex 3: Finding paths.
 --
@@ -186,7 +189,9 @@ findSum2 ks ns = todo
 --     ==> [7,3,5,1,6,2,4,0]
 
 allSums :: [Int] -> [Int]
-allSums xs = todo
+allSums xs = do
+  lists <- mapM (\x -> [x,0]) xs
+  return (sum lists)
 
 ------------------------------------------------------------------------------
 -- Ex 6: the standard library defines the function
@@ -213,7 +218,7 @@ allSums xs = todo
 --  sumBounded 5 [1,2,3,1,-2]   -- 1+2+3=6 which results in Nothing
 --    ==> Nothing
 sumBounded :: Int -> [Int] -> Maybe Int
-sumBounded k xs = foldM (f1 k) 0 xs
+sumBounded k = foldM (f1 k) 0
 
 f1 :: Int -> Int -> Int -> Maybe Int
 f1 k acc x = todo
@@ -227,7 +232,7 @@ f1 k acc x = todo
 --  sumNotTwice [3,-2,3]         ==> 1
 --  sumNotTwice [1,2,-2,3]       ==> 4
 sumNotTwice :: [Int] -> Int
-sumNotTwice xs = fst $ runState (foldM f2 0 xs) []
+sumNotTwice xs = evalState (foldM f2 0 xs) []
 
 f2 :: Int -> Int -> State [Int] Int
 f2 acc x = todo
@@ -294,7 +299,7 @@ data SL a = SL (Int -> (a,Int,[String]))
 
 -- Run an SL operation with the given starting state
 runSL :: SL a -> Int -> (a,Int,[String])
-runSL (SL f) state = f state
+runSL (SL f) = f
 
 -- Write a log message
 msgSL :: String -> SL ()
@@ -306,7 +311,7 @@ getSL = SL (\s -> (s,s,[]))
 
 -- Overwrite the state
 putSL :: Int -> SL ()
-putSL s' = SL (\s -> ((),s',[]))
+putSL s' = SL (const ((), s', []))
 
 -- Modify the state
 modifySL :: (Int->Int) -> SL ()
