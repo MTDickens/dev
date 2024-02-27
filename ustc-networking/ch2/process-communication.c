@@ -4,16 +4,24 @@
 #include <sys/wait.h>
 #include <string.h>
 
+#define READ 0
+#define WRITE 1
+
 int main() {
-    int pipefd[2]; // 管道文件描述符数组
-    pid_t pid;
-    FILE *write_fd, *read_fd;
-    
+    /**
+     * 管道文件描述符数组
+     * pipefd[0] is for read
+     * pipefd[1] is for write
+    */
+    int pipefd[2];
+    pid_t pid;    
 
     if (pipe(pipefd) == -1) { // 创建管道
         perror("pipe");
         exit(EXIT_FAILURE);
     }
+
+    pid_t read_fd = pipefd[READ], write_fd = pipefd[WRITE];
 
     pid = fork(); // 创建子进程
 
@@ -22,30 +30,26 @@ int main() {
         exit(EXIT_FAILURE);
     }
 
+    // 父进程向子进程传递 msg
     if (pid == 0) { // 子进程
         char buffer[1024];
-        close(pipefd[1]); // 关闭写入端
-        read_fd = fdopen(pipefd[0], "r"); // 将管道读取端转换为 FILE*
+        close(write_fd); // 关闭 write_fd
 
         // 从管道中读取数据
-        fread(buffer, sizeof(buffer) / sizeof(char), sizeof(char), read_fd);
+        read(read_fd, buffer, sizeof(buffer));
         printf("Child process received: %s\n", buffer);
         
-
-        fclose(read_fd); // 关闭 FILE*
+        close(read_fd); // 关闭 read_fd
         exit(EXIT_SUCCESS);
     } else { // 父进程
-        close(pipefd[0]); // 关闭读取端
-        write_fd = fdopen(pipefd[1], "w"); // 将管道写入端转换为 FILE*
+        close(read_fd); // 关闭 read_fd
 
-        // 向管道中写入数据
-        const char* message = "Haiyaa! So weak!";
-        printf("Parent process sending: %s\n", message);
-        fprintf(write_fd, "%s", message);
-        fflush(write_fd); // 刷新缓冲区
-
-        fclose(write_fd); // 关闭 FILE*
-        wait(NULL); // 等待子进程退出
+        const char msg[] = "Fuiyoh! Nice tossing! Uncle Roger impressed~";
+        //  向管道写数据
+        write(write_fd, msg, sizeof(msg));
+        printf("Parent process sent: %s\n", msg);
+        
+        close(write_fd); // 关闭 write_fd
         exit(EXIT_SUCCESS);
     }
 
