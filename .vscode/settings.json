@@ -39,7 +39,10 @@
         "in.h": "c",
         "wait.h": "c",
         "features.h": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "*.tcc": "c",
+        "istream": "c",
+        "streambuf": "c"
     },
     "cmake.sourceDirectory": "/workspaces/dev/CS106L",
     "C_Cpp.default.compilerPath": "/usr/bin/gcc-13"
