@@ -1,3 +1,9 @@
+
+#define TRUE 1
+#define FALSE 0
+
+int stem(char *p, int index, int position);
+
 /* This is the Porter stemming algorithm, coded up in ANSI C by the
  * author. It may be be regarded as canonical, in that it follows the
  * algorithm presented in
@@ -36,11 +42,7 @@
  *     step2 and step4 access the byte before the first letter. So we skip
  *     steps after step1ab unless k > k0. */
 #include <string.h>
-
-#define TRUE 1
-#define FALSE 0
-
-int stem(char *p, int index, int position);
+#include <ctype.h>
 
 /* The main part of the stemming algorithm starts here. b is a buffer
  * holding a word to be stemmed. The letters are in b[k0], b[k0+1] ...
@@ -387,203 +389,203 @@ step1c()
 static void
 step2()
 {
-    // switch (b[k - 1])
-    // {
-    // case 'a':
-    //     if (ends("\07"
-    //              "ational"))
-    //     {
-    //         replace("\03"
-    //                 "ate");
-    //         break;
-    //     }
+    switch (b[k - 1])
+    {
+    case 'a':
+        if (ends("\07"
+                 "ational"))
+        {
+            replace("\03"
+                    "ate");
+            break;
+        }
 
-    //     if (ends("\06"
-    //              "tional"))
-    //     {
-    //         replace("\04"
-    //                 "tion");
-    //         break;
-    //     }
+        if (ends("\06"
+                 "tional"))
+        {
+            replace("\04"
+                    "tion");
+            break;
+        }
 
-    //     break;
-    // case 'c':
-    //     if (ends("\04"
-    //              "enci"))
-    //     {
-    //         replace("\04"
-    //                 "ence");
-    //         break;
-    //     }
+        break;
+    case 'c':
+        if (ends("\04"
+                 "enci"))
+        {
+            replace("\04"
+                    "ence");
+            break;
+        }
 
-    //     if (ends("\04"
-    //              "anci"))
-    //     {
-    //         replace("\04"
-    //                 "ance");
-    //         break;
-    //     }
+        if (ends("\04"
+                 "anci"))
+        {
+            replace("\04"
+                    "ance");
+            break;
+        }
 
-    //     break;
-    // case 'e':
-    //     if (ends("\04"
-    //              "izer"))
-    //     {
-    //         replace("\03"
-    //                 "ize");
-    //         break;
-    //     }
+        break;
+    case 'e':
+        if (ends("\04"
+                 "izer"))
+        {
+            replace("\03"
+                    "ize");
+            break;
+        }
 
-    //     break;
-    // case 'l':
-    //     /* --DEPARTURE--: To match the published algorithm,
-    //      * replace this line with:
-    //      *
-    //      * ```
-    //      * if (ends("\04" "abli")) {
-    //      *     replace("\04" "able");
-    //      *
-    //      *     break;
-    //      * }
-    //      * ```
-    //      */
-    //     if (ends("\03"
-    //              "bli"))
-    //     {
-    //         replace("\03"
-    //                 "ble");
-    //         break;
-    //     }
+        break;
+    case 'l':
+        /* --DEPARTURE--: To match the published algorithm,
+         * replace this line with:
+         *
+         * ```
+         * if (ends("\04" "abli")) {
+         *     replace("\04" "able");
+         *
+         *     break;
+         * }
+         * ```
+         */
+        if (ends("\03"
+                 "bli"))
+        {
+            replace("\03"
+                    "ble");
+            break;
+        }
 
-    //     if (ends("\04"
-    //              "alli"))
-    //     {
-    //         replace("\02"
-    //                 "al");
-    //         break;
-    //     }
+        if (ends("\04"
+                 "alli"))
+        {
+            replace("\02"
+                    "al");
+            break;
+        }
 
-    //     if (ends("\05"
-    //              "entli"))
-    //     {
-    //         replace("\03"
-    //                 "ent");
-    //         break;
-    //     }
+        if (ends("\05"
+                 "entli"))
+        {
+            replace("\03"
+                    "ent");
+            break;
+        }
 
-    //     if (ends("\03"
-    //              "eli"))
-    //     {
-    //         replace("\01"
-    //                 "e");
-    //         break;
-    //     }
+        if (ends("\03"
+                 "eli"))
+        {
+            replace("\01"
+                    "e");
+            break;
+        }
 
-    //     if (ends("\05"
-    //              "ousli"))
-    //     {
-    //         replace("\03"
-    //                 "ous");
-    //         break;
-    //     }
+        if (ends("\05"
+                 "ousli"))
+        {
+            replace("\03"
+                    "ous");
+            break;
+        }
 
-    //     break;
-    // case 'o':
-    //     if (ends("\07"
-    //              "ization"))
-    //     {
-    //         replace("\03"
-    //                 "ize");
-    //         break;
-    //     }
+        break;
+    case 'o':
+        if (ends("\07"
+                 "ization"))
+        {
+            replace("\03"
+                    "ize");
+            break;
+        }
 
-    //     if (ends("\05"
-    //              "ation"))
-    //     {
-    //         replace("\03"
-    //                 "ate");
-    //         break;
-    //     }
+        if (ends("\05"
+                 "ation"))
+        {
+            replace("\03"
+                    "ate");
+            break;
+        }
 
-    //     if (ends("\04"
-    //              "ator"))
-    //     {
-    //         replace("\03"
-    //                 "ate");
-    //         break;
-    //     }
+        if (ends("\04"
+                 "ator"))
+        {
+            replace("\03"
+                    "ate");
+            break;
+        }
 
-    //     break;
-    // case 's':
-    //     if (ends("\05"
-    //              "alism"))
-    //     {
-    //         replace("\02"
-    //                 "al");
-    //         break;
-    //     }
+        break;
+    case 's':
+        if (ends("\05"
+                 "alism"))
+        {
+            replace("\02"
+                    "al");
+            break;
+        }
 
-    //     if (ends("\07"
-    //              "iveness"))
-    //     {
-    //         replace("\03"
-    //                 "ive");
-    //         break;
-    //     }
+        if (ends("\07"
+                 "iveness"))
+        {
+            replace("\03"
+                    "ive");
+            break;
+        }
 
-    //     if (ends("\07"
-    //              "fulness"))
-    //     {
-    //         replace("\03"
-    //                 "ful");
-    //         break;
-    //     }
+        if (ends("\07"
+                 "fulness"))
+        {
+            replace("\03"
+                    "ful");
+            break;
+        }
 
-    //     if (ends("\07"
-    //              "ousness"))
-    //     {
-    //         replace("\03"
-    //                 "ous");
-    //         break;
-    //     }
+        if (ends("\07"
+                 "ousness"))
+        {
+            replace("\03"
+                    "ous");
+            break;
+        }
 
-    //     break;
-    // case 't':
-    //     if (ends("\05"
-    //              "aliti"))
-    //     {
-    //         replace("\02"
-    //                 "al");
-    //         break;
-    //     }
+        break;
+    case 't':
+        if (ends("\05"
+                 "aliti"))
+        {
+            replace("\02"
+                    "al");
+            break;
+        }
 
-    //     if (ends("\05"
-    //              "iviti"))
-    //     {
-    //         replace("\03"
-    //                 "ive");
-    //         break;
-    //     }
+        if (ends("\05"
+                 "iviti"))
+        {
+            replace("\03"
+                    "ive");
+            break;
+        }
 
-    //     if (ends("\06"
-    //              "biliti"))
-    //     {
-    //         replace("\03"
-    //                 "ble");
-    //         break;
-    //     }
+        if (ends("\06"
+                 "biliti"))
+        {
+            replace("\03"
+                    "ble");
+            break;
+        }
 
-    //     break;
-    // /* --DEPARTURE--: To match the published algorithm, delete this line. */
-    // case 'g':
-    //     if (ends("\04"
-    //              "logi"))
-    //     {
-    //         replace("\03"
-    //                 "log");
-    //         break;
-    //     }
-    // }
+        break;
+    /* --DEPARTURE--: To match the published algorithm, delete this line. */
+    case 'g':
+        if (ends("\04"
+                 "logi"))
+        {
+            replace("\03"
+                    "log");
+            break;
+        }
+    }
 }
 
 /* `step3()` deals with -ic-, -full, -ness etc.
@@ -591,73 +593,73 @@ step2()
 static void
 step3()
 {
-    // switch (b[k])
-    // {
-    // case 'e':
-    //     if (ends("\05"
-    //              "icate"))
-    //     {
-    //         replace("\02"
-    //                 "ic");
-    //         break;
-    //     }
+    switch (b[k])
+    {
+    case 'e':
+        if (ends("\05"
+                 "icate"))
+        {
+            replace("\02"
+                    "ic");
+            break;
+        }
 
-    //     if (ends("\05"
-    //              "ative"))
-    //     {
-    //         replace("\00"
-    //                 "");
-    //         break;
-    //     }
+        if (ends("\05"
+                 "ative"))
+        {
+            replace("\00"
+                    "");
+            break;
+        }
 
-    //     if (ends("\05"
-    //              "alize"))
-    //     {
-    //         replace("\02"
-    //                 "al");
-    //         break;
-    //     }
+        if (ends("\05"
+                 "alize"))
+        {
+            replace("\02"
+                    "al");
+            break;
+        }
 
-    //     break;
-    // case 'i':
-    //     if (ends("\05"
-    //              "iciti"))
-    //     {
-    //         replace("\02"
-    //                 "ic");
-    //         break;
-    //     }
+        break;
+    case 'i':
+        if (ends("\05"
+                 "iciti"))
+        {
+            replace("\02"
+                    "ic");
+            break;
+        }
 
-    //     break;
-    // case 'l':
-    //     if (ends("\04"
-    //              "ical"))
-    //     {
-    //         replace("\02"
-    //                 "ic");
-    //         break;
-    //     }
+        break;
+    case 'l':
+        if (ends("\04"
+                 "ical"))
+        {
+            replace("\02"
+                    "ic");
+            break;
+        }
 
-    //     if (ends("\03"
-    //              "ful"))
-    //     {
-    //         replace("\00"
-    //                 "");
-    //         break;
-    //     }
+        if (ends("\03"
+                 "ful"))
+        {
+            replace("\00"
+                    "");
+            break;
+        }
 
-    //     break;
-    // case 's':
-    //     if (ends("\04"
-    //              "ness"))
-    //     {
-    //         replace("\00"
-    //                 "");
-    //         break;
-    //     }
+        break;
+    case 's':
+        if (ends("\04"
+                 "ness"))
+        {
+            replace("\00"
+                    "");
+            break;
+        }
 
-    //     break;
-    // }
+        break;
+    }
 }
 
 /* `step4()` takes off -ant, -ence etc., in
@@ -665,156 +667,156 @@ step3()
 static void
 step4()
 {
-    // switch (b[k - 1])
-    // {
-    // case 'a':
-    //     if (ends("\02"
-    //              "al"))
-    //     {
-    //         break;
-    //     }
+    switch (b[k - 1])
+    {
+    case 'a':
+        if (ends("\02"
+                 "al"))
+        {
+            break;
+        }
 
-    //     return;
-    // case 'c':
-    //     if (ends("\04"
-    //              "ance"))
-    //     {
-    //         break;
-    //     }
+        return;
+    case 'c':
+        if (ends("\04"
+                 "ance"))
+        {
+            break;
+        }
 
-    //     if (ends("\04"
-    //              "ence"))
-    //     {
-    //         break;
-    //     }
+        if (ends("\04"
+                 "ence"))
+        {
+            break;
+        }
 
-    //     return;
-    // case 'e':
-    //     if (ends("\02"
-    //              "er"))
-    //     {
-    //         break;
-    //     }
+        return;
+    case 'e':
+        if (ends("\02"
+                 "er"))
+        {
+            break;
+        }
 
-    //     return;
-    // case 'i':
-    //     if (ends("\02"
-    //              "ic"))
-    //     {
-    //         break;
-    //     }
+        return;
+    case 'i':
+        if (ends("\02"
+                 "ic"))
+        {
+            break;
+        }
 
-    //     return;
-    // case 'l':
-    //     if (ends("\04"
-    //              "able"))
-    //     {
-    //         break;
-    //     }
+        return;
+    case 'l':
+        if (ends("\04"
+                 "able"))
+        {
+            break;
+        }
 
-    //     if (ends("\04"
-    //              "ible"))
-    //     {
-    //         break;
-    //     }
+        if (ends("\04"
+                 "ible"))
+        {
+            break;
+        }
 
-    //     return;
-    // case 'n':
-    //     if (ends("\03"
-    //              "ant"))
-    //     {
-    //         break;
-    //     }
+        return;
+    case 'n':
+        if (ends("\03"
+                 "ant"))
+        {
+            break;
+        }
 
-    //     if (ends("\05"
-    //              "ement"))
-    //     {
-    //         break;
-    //     }
+        if (ends("\05"
+                 "ement"))
+        {
+            break;
+        }
 
-    //     if (ends("\04"
-    //              "ment"))
-    //     {
-    //         break;
-    //     }
+        if (ends("\04"
+                 "ment"))
+        {
+            break;
+        }
 
-    //     if (ends("\03"
-    //              "ent"))
-    //     {
-    //         break;
-    //     }
+        if (ends("\03"
+                 "ent"))
+        {
+            break;
+        }
 
-    //     return;
-    // case 'o':
-    //     if (ends("\03"
-    //              "ion") &&
-    //         j >= k0 && (b[j] == 's' || b[j] == 't'))
-    //     {
-    //         break;
-    //     }
+        return;
+    case 'o':
+        if (ends("\03"
+                 "ion") &&
+            j >= k0 && (b[j] == 's' || b[j] == 't'))
+        {
+            break;
+        }
 
-    //     /* takes care of -ous */
-    //     if (ends("\02"
-    //              "ou"))
-    //     {
-    //         break;
-    //     }
+        /* takes care of -ous */
+        if (ends("\02"
+                 "ou"))
+        {
+            break;
+        }
 
-    //     return;
-    // case 's':
-    //     if (ends("\03"
-    //              "ism"))
-    //     {
-    //         break;
-    //     }
+        return;
+    case 's':
+        if (ends("\03"
+                 "ism"))
+        {
+            break;
+        }
 
-    //     return;
-    // case 't':
-    //     if (ends("\03"
-    //              "ate"))
-    //     {
-    //         break;
-    //     }
+        return;
+    case 't':
+        if (ends("\03"
+                 "ate"))
+        {
+            break;
+        }
 
-    //     if (ends("\03"
-    //              "iti"))
-    //     {
-    //         break;
-    //     }
+        if (ends("\03"
+                 "iti"))
+        {
+            break;
+        }
 
-    //     return;
-    // case 'u':
-    //     if (ends("\03"
-    //              "ous"))
-    //     {
-    //         break;
-    //     }
+        return;
+    case 'u':
+        if (ends("\03"
+                 "ous"))
+        {
+            break;
+        }
 
-    //     return;
-    // case 'v':
-    //     if (ends("\03"
-    //              "ive"))
-    //     {
-    //         break;
-    //     }
+        return;
+    case 'v':
+        if (ends("\03"
+                 "ive"))
+        {
+            break;
+        }
 
-    //     return;
-    // case 'z':
-    //     if (ends("\03"
-    //              "ize"))
-    //     {
-    //         break;
-    //     }
+        return;
+    case 'z':
+        if (ends("\03"
+                 "ize"))
+        {
+            break;
+        }
 
-    //     return;
-    // default:
-    //     return;
-    // }
+        return;
+    default:
+        return;
+    }
 
-    // if (getMeasure() > 1)
-    // {
-    //     k = j;
-    // }
+    if (getMeasure() > 1)
+    {
+        k = j;
+    }
 }
 
 /* `step5()` removes a final `-e` if `getMeasure()` is
@@ -873,6 +875,8 @@ int stem(char *p, int index, int position)
      * mention is made of this in the published
      * algorithm. Remove the line to match the published
      * algorithm. */
+    for (int i = 0; i <= k; ++i)
+        p[i] = tolower(p[i]);
     step1ab();
 
     if (k > k0)
@@ -988,7 +992,7 @@ int main()
 
         while (true)
         {
-            char word[10];
+            char word[100];
             cin >> word;
             if (strcmp(word, "#") == 0)
                 break;
@@ -1012,7 +1016,7 @@ int main()
         // cout << filename << ": " << cur_doc.l2_squared << '\n';
         // for (auto &i : cur_doc.word_cnt)
         // {
-        //     cout << "(\"" << i.first << "\": " << i.second << ", ";
+        //     cout << "(\"" << i.first << "\": " << i.second << "), ";
         // }
         // cout << "\n\n";
     }
@@ -1030,7 +1034,8 @@ int main()
         if (it1 != filename_to_long.end() && it2 != filename_to_long.end())
         {
             double angle_dis = compare_docs(documents[it1->second], documents[it2->second]);
-            cout << "Case " << i + 1 << ": " << setiosflags(ios::fixed) << setprecision(3) << angle_dis << '\n';
+            cout << "Case " << i + 1 << ": ";
+            printf("%.3f\n", angle_dis);
         }
     }
 
