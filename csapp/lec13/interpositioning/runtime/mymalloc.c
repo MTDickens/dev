@@ -4,7 +4,6 @@
 #include <stdlib.h>
 #include <dlfcn.h>
 
-/* malloc wrapper function */
 void *malloc(size_t size)
 {  
     static int calltimes = 0;
