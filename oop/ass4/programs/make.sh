@@ -11,6 +11,10 @@ else
         mkdir out
     fi
     for program in ${programs[@]}; do
-        g++ -Werror -Wall -std=c++17 -O3 shared.cpp ${program}.cpp -o ./out/${program}
+        if [ "$1" == "block" ]; then
+            g++ -Werror -Wall -std=c++17 -O2 -DBLOCK_CLOG shared.cpp ${program}.cpp -o ./out/${program}
+        else
+            g++ -Werror -Wall -std=c++17 -O2 shared.cpp ${program}.cpp -o ./out/${program}
+        fi
     done
 fi

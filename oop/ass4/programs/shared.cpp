@@ -219,7 +219,9 @@ void Manager::read_from_file(PersonalDiary &pd)
         std::cerr << "Error: file format is corrupted\n";
         exit(EXIT_FAILURE);
     }
+#ifndef BLOCK_CLOG
     std::clog << "Reading from file, please wait ...\n";
+#endif
     for (size_t i = 0; i != cnt && std::getline(read_file, line); ++i)
     {
         std::stringstream ss_date(line);
@@ -238,7 +240,9 @@ void Manager::read_from_file(PersonalDiary &pd)
         }
         pd.pdadd(date, de);
     }
+#ifndef BLOCK_CLOG
     std::clog << "Reading finished\n";
+#endif
 }
 
 void Manager::write_to_file(const PersonalDiary &pd)
